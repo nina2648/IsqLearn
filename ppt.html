@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./ppt.css" rel="stylesheet"  type="text/css">
+    <script type="text/javascript" src="./jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="./jquery/jquery-1.10.2.min.js"></script>
+
+    <script type="text/javascript" src="./cnapi.js"></script>
+    <script async type="text/javascript" src="./pptcut.js"></script>
+    <script async type="text/javascript" src="./pptshow.js"></script>
+    <script async type="text/javascript" src="./next.js"></script>
+    <script async type="text/javascript" src="./pre.js"></script>
+</head>
+<body onload="shppt()">
+    <label for="pptfile" id="pptuploader" onclick="pptupload()">上傳PPT</label>
+    <input type="file" id="pptfile" data-target="file-uploader" accept="application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation" multiple="multiple"/>
+    <!--<button id="uploadbtn">上傳PPT</button>-->
+    <div id="ppts">
+        <img id="pptshow" style="max-width:400px;"></br>
+        <button id="next" onclick="prepage();"></button>
+        <button id="pre" onclick="nextpage();"></button>
+    </div>
+</body>
+</html>
