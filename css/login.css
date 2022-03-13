@@ -1,0 +1,88 @@
+@import'./reset.css';
+
+.banner{
+    height: 50px;
+    background-color: #F3AA96;
+    float: top;
+}
+
+/*登入顯示區塊*/
+.loginmain{
+    width:750px;
+    height:400px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    /*margin-top= -(height/2) + (banner-height/2) */
+    margin-top: -175px;
+    margin-left: -375px;
+}
+
+/*左方logo區塊*/
+.loginlogo{
+    height:400px;
+    width:400px;
+    background-image:url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    float:left;
+}
+
+/*右方區塊*/
+.loginmsg{
+    height:400px;
+    width:350px;
+    float:left;
+}
+/*右-登入標題*/
+.logintitle{
+    height:40px;
+    margin-left:50px;
+    margin-top:60px;
+    font-size: 2em;
+    vertical-align:text-bottom;
+    font-weight: bold;
+}
+
+/*右-帳號輸入區*/
+.login{
+    height:300px;
+    margin-left:50px;
+    margin-top:40px;
+    font-size:1.5em;
+    font-weight: bold;
+}
+
+/*帳號*/
+#user{
+    height:30px;
+    padding:5px 15px; 
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+/*密碼*/
+#pass{
+    height:30px;
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+/*按鈕區塊*/
+.btn{
+    margin-left:70px;
+}
+/*登入、註冊按鈕樣式*/
+.login button{
+    height:30px;
+    width: 60px;
+    border-radius: 5px; 
+    font-family: 'Microsoft JhengHei',Arial ;
+    margin-left: 15px;
+    font-size:15px;
+}

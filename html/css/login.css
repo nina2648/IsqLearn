@@ -1,0 +1,129 @@
+@import'./reset.css';
+
+.banner{
+    height: 50px;
+    background-color: #F3AA96;
+    float: top;
+}
+
+/*登入顯示區塊*/
+.loginmain{
+    /*margin-top= -(height/2) + (banner-height/2) */
+    /*
+    width:750px;
+    height:400px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top: -175px;
+    margin-left: -375px;
+    */
+    width:58.77vw;
+    height:31.34vw;
+    margin:auto;
+    margin-top: calc((100vh - 50px - 31.34vw) / 2);
+}
+
+/*左方logo區塊*/
+.loginlogo{
+    /*
+    height:400px;
+    width:400px;
+    */
+    height:31.34vw;
+    width:31.34vw;
+    background-image:url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    float:left;
+}
+
+/*右方區塊*/
+.loginmsg{
+    /*
+    height:400px;
+    width:350px;
+    */
+    height:31.34vw;
+    width:27.42vw;
+    float:left;
+}
+/*右-登入標題*/
+.logintitle{
+    /*
+    height:40px;
+    margin-left:50px;
+    margin-top:60px;
+    font-size: 35px;
+    */
+    height:3.13vw;
+    margin-left:3.91vw;
+    margin-top:4.7vw;
+    font-size: 2.74vw;
+    vertical-align:text-bottom;
+    font-weight: bold;
+}
+
+/*右-帳號輸入區*/
+.login{
+    /*
+    height:300px;
+    margin-left:50px;
+    margin-top:40px;
+    font-size:24px;
+    */
+    height:23.51vw;
+    margin-left:3.91vw;
+    margin-top:3.13vw;
+    font-size:1.88vw;
+    font-weight: bold;
+}
+
+/*帳號*/
+#user{
+    /*
+    height:30px;
+    padding:5px 15px; 
+    */
+    height:2.35vw;
+    padding:0.39vw 1.17vw; 
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+/*密碼*/
+#pass{
+    /*
+    height:30px;
+    padding:5px 15px; 
+    */
+    height:2.35vw;
+    padding:0.39vw 1.17vw;
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+/*按鈕區塊*/
+.btn{
+    /* margin-left:70px; */
+    margin-left:5.48vw;
+}
+/*登入、註冊按鈕樣式*/
+.login button{
+    /*
+    height:30px;
+    width: 60px;
+    margin-left: 15px;
+    font-size:15px;
+    */
+    height:2.35vw;
+    width: 4.7vw;
+    border-radius: 5px; 
+    font-family: 'Microsoft JhengHei',Arial ;
+    margin-left: 1.17vw;
+    font-size: 1.17vw;
+}

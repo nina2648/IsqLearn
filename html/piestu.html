@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="BIG-5">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弱點分析</title>
+    <link rel="stylesheet" href="css/piestu.css">
+</head>
+<body style="font-family: Microsoft JhengHei,Arial;">
+
+    <!--頂端-->
+    <header id="header">
+        <div class="banner">
+            <div class="userbtn">
+                <div class="usermsg">
+                    <div class="userlogo"></div>
+                    <div class="username">王小明</div>
+                </div>
+                <!--切換頁面按鈕-->
+                <div class="btns">
+                    <nav id="btnpage">
+                        <ul>
+                            <li id="btnclasslist"><a href="classlist.html">課堂列表</a></li>
+                            <li id="btnpie"><a href="piestu.html" class="scroll">弱點分析</a></li>
+                            <li id="btnaccount"><a href="profile.html" class="scroll">我的帳號</a></li>
+                            <li id="btnexit" style="border-right:0px;"><a href="" class="scroll">登出</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+        <!--piechart程式-->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart(){
+            drawPieChart();
+        }
+        
+        function drawPieChart() {
+
+            let data = google.visualization.arrayToDataTable([
+            ['FBtype', 'percent'],
+            ['不懂',  45],
+            ['太吵',  5],
+            ['其他',  10],
+            ['太快',  30],
+            ['懂',  10]
+            ]);
+            // 設定一下
+            let options = {
+            title: '資訊安全實務',
+            backgroundColor:'transparent',
+            fontSize:18,
+            fontName:"Microsoft JhengHei",
+            titleFontSize:28,
+            chartArea: {width: 900, height: 400},
+            pieHole: 0.4,
+            colors:['#B1C3D1','#ADD3EC','#D0C7DC','#D4E5EC','#CACBD2']
+            //is3D: true
+            };
+            // 把圖畫出來
+            let chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+        </script>
+        <!--piechart程式結束-->
+    </header>
+
+    <main>
+        <!--piechart-->
+        <div class="piemain">
+            <div id="piechart"></div>
+            <div id="classbtn">
+                <!--原 style="margin-top: 10px;"-->
+                <button style="margin-top: 0.78vw;">全部</button><br>
+                <button>科技新知導讀</button><br>
+                <button>微積分</button><br>
+                <button>資料庫程式設計</button><br>
+                <button>網路實務</button><br>
+                <button>作業系統</button><br>
+                <button>系統分析與設計</button><br>
+                <button>畢業專題(一)</button><br>
+                <button>專案管理</button><br>
+                <button>資訊安全實務</button>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

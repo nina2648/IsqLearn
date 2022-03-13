@@ -1,0 +1,282 @@
+@import'./reset.css';
+
+.banner{
+    height: 50px;
+    background-color: #F3AA96;
+    float: top;
+}
+
+.userbtn{
+    height:50px;
+    float:right;
+}
+.usermsg{
+    width:105px;
+    height:40px;
+    margin-top:5px;
+    padding-left: 5px;
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
+    background-color: rgba(255,255,255,0.3);
+    border-radius:10px;
+    float:left;
+}
+.userlogo{
+    width:35px;
+    height:35px;
+    background-image:url(../images/user.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top:2.5px;
+    float:left;
+}
+.username{
+    font-size: 1.2em;
+    padding-right: 7px;
+    padding-left: 5px;
+    padding-top: 10px;   
+    float:left;
+}
+
+
+/*功能按鈕樣式*/
+.btns{
+    height:40px;
+    width:500px;
+}
+#btnpage ul li{
+    display: inline;
+    font-size: 1.2em;
+    padding-left: 5px;
+    padding-right: 7px;
+    border-right:solid gray 2px;
+}
+#btnpage ul{
+    float: right;
+    padding-right: 45px;
+    padding-top: 15px;   
+}
+/*設定超連結顏色*/
+#btnpage a{
+    /*沒有底線*/
+    text-decoration:none;
+    color:black;
+}
+/*按鈕hover設定*/
+#btnpage a:hover{
+    text-decoration:none;
+    color:white;
+}
+
+
+/*顯示區域置中設定*/
+#main{
+    /*height: 517.5px;*/
+    /*width: 1055px;*/
+    width: calc(55vw + 3vw + 23.5vw + 10px);
+    height: 80vh;
+    /*
+    min-height:517.5px;
+    min-width: 1055px;
+    */
+    margin:auto;
+}
+#left{  
+    float:left;
+}
+
+/*ppt同步區塊*/
+#pptshare{
+    /*
+    width:720px;
+    height:405px;
+    min-width:720px;
+    min-height:405px;
+    */
+    
+    width:55vw;
+    height:30.87vw;
+
+    background-color: #DDDBD5;
+    /*margin-top: 25px;*/
+    
+    margin-top:calc((100vh - 50px - 36.5vw) / 2);
+}
+
+/*回饋按鈕*/
+#fbbtn button{
+    /*
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height:60px;
+    */
+    width:4.7vw;
+    height:4.7vw;
+    /*
+    margin: 7.5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    */
+    margin: 0.59vw;
+    margin-top: 1.56vw;
+    margin-left: 0.78vw;
+    border-radius: 60px;
+    border:0px;
+    font-size: 1em;
+    background-color:#F6B980;
+    font-family: 'Microsoft JhengHei',Arial ;
+    font-weight:900;
+}
+#fbbtn button:hover{
+    color:white;
+    background-color:#FDE3A6;  
+}
+#fast{
+    background-image:url(../images/fastbtn.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#noise{
+    background-image:url(../images/noisebtn.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#confuse{
+    background-image:url(../images/confusebtn.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#OK{
+    background-image:url(../images/OKbtn.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/*右側回饋訊息顯示與輸入欄*/
+#fbmsg{
+    /*
+    width:300px;
+    height: 475px;
+    min-width: 300px;
+    min-height:475px;
+    */
+    width:23.5vw;
+    height:36.5vw;
+    border:solid  #F8CDA6 5px;
+    border-radius: 7px;
+    /*margin-top:25px;*/
+    margin-top:calc((100vh - 50px - 36.5vw) / 2);
+    margin-left:3vw;
+    float:left;
+    position: relative;
+}
+/*顯示區*/
+#msgshow{
+    height:27.42vw;
+    width:23.5vw;
+    /*
+    height:350px;
+    width:300px;
+    min-width: 300px;
+    min-height:350px;
+    */
+    overflow: auto;
+}
+#msgshow div{
+    /*
+    width:290px;
+    height:100px;
+    min-width: 290px;
+    min-height:100px;
+    */
+    
+    width:calc(22.72vw - 10px -7.5px);
+    height:7.83vw;
+    border-bottom:solid #F8CDA6 3px;
+    background-color:#FEF4DE;
+    padding:5px;
+    word-break: break-all;
+    position: relative;
+}
+
+
+/*覆議按鈕樣式*/
+#msgshow button{
+    /*
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height:40px;
+    */
+    
+    width:3.13vw;
+    height:3.13vw;
+    margin: 7.5px;
+    margin-right: 15px;
+    right:0px;
+    bottom:0px;
+    border-radius: 30px;
+    border:0px;
+    background-color:#F6B980;
+    background-image:url(../images/raise.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    float:right;
+    position: absolute;
+}
+#msgshow button:hover{
+    color:white;
+    background-color:#FDE3A6;  
+}
+
+/*回饋訊息輸入區*/
+#msgenter{
+    /*
+    width:300px;
+    height:125px;
+    min-width: 300px;
+    min-height: 125px;
+    */
+    
+    width:23.5vw;
+    height:9.8vw;
+    background-color: #F8CDA6;
+    position: absolute; 
+    bottom:0px;
+}
+
+/*預設訊息combobox*/
+.default{
+    margin:5px;
+}
+#msgenter label{
+    font-weight:bold;
+}
+#default{
+    margin-left:5px;
+    margin-top:5px;
+    font-size:18;
+    font-family:'Microsoft JhengHei',Arial ;
+    font-weight:bold;
+}
+
+/*訊息輸入框*/
+#enter{
+    /*
+    width:290px;
+    height:75px;
+    min-width: 290px;
+    min-height:75px;
+    */
+    
+    width:22.72vw;
+    height:5.87vw;
+    overflow:auto;
+    margin-left:2px;
+    margin-top:5px;
+    font-size: 18;
+    font-family:'Microsoft JhengHei',Arial ;
+}
+
+

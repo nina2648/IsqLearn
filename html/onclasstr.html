@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="BIG-5">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>進行課程</title>
+    <link rel="stylesheet" href="css/onclasstr.css" >
+    <!--下拉式選單-->
+    <script src="js/onclasstr.js"></script>
+    <script type="text/javascript" src="./js/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="./js/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/cnapi.js"></script>
+    <script type="text/javascript" src="js/pptshow.js"></script>
+    <script type="text/javascript" src="js/pre.js"></script>
+    <script type="text/javascript" src="js/next.js"></script>
+</head>
+<body style="font-family: Microsoft JhengHei,Arial;">
+<!--頂端-->
+<header id="header">
+    <div class="banner">
+        <div class="userbtn">
+            <div class="usermsg">
+                <div class="userlogo"></div>
+                <div class="username">王小明</div>
+            </div>
+            <!--切換頁面按鈕-->
+            <div class="btns">
+                <nav id="btnpage">
+                    <ul>
+                        <li id="btnclasslist"><a href="classlisttr.html">課堂列表</a></li>
+                        <li id="btnpie"><a href="pietr.html" class="scroll">教學追蹤</a></li>
+                        <li id="btnaccount"><a href="profile.html" class="scroll">我的帳號</a></li>
+                        <li id="btnexit" style="border-right:0px;"><a href="" class="scroll">登出</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+    <main>
+        <div id="main">
+            <div id="left">
+                <div id="pptshare">
+                    <img id="pptshow" style="max-width:55vw;" ><br/>
+                </div>
+                <div id="btn">
+                    <div id="control">
+                        <button >上傳</button>
+                        <button>下課</button>
+                        <button>重講</button>
+                    </div>
+                    <div id="page">
+                        <button onclick="prepage()">上</button>
+                        <button onclick="nextpage()">下</button>
+                    </div>
+                    <div class="OK" title="聽懂了"></div>
+                    <div id="OKnum">10</div>
+                </div>
+            </div>
+            <div id="fbmsg">
+                <!--回饋訊息顯示區-->
+                <div id="count">
+                    <div class="fast" title="太快"></div>
+                    <div id="fastnum">99</div>
+                    <div class="noise" title="太吵"></div>
+                    <div id="noisenum">99</div>
+                    <div class="confuse" title="聽不懂"></div>
+                    <div id="confusenum">99</div>
+                    <!--
+                    <div class="OK"></div>
+                    <div id="OKnum">10</div>
+                    -->
+                </div>
+                <div id="elseshow" onclick="elseshow()">其它</div>
+                <div id="show">
+                    <div id="msgshow">
+                        <div>
+                            <p>回饋內容</p>
+                            <button>覆</button>
+                        </div>
+                        <div>
+                            <p>回饋內容</p>
+                            <button>覆</button>
+                        </div>
+                        <div>
+                            <p>回饋內容</p>
+                            <button>覆</button>
+                        </div>
+                        <div>
+                            <p>回饋內容</p>
+                            <button>覆</button>
+                        </div>
+                        <div>
+                            <p>回饋內容</p>
+                            <button>覆</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+@import'./reset.css';
+
+/*整個網頁的背景色*/
+html{
+    background-color: #DDDBD5;
+}
+
+.banner{
+    height: 50px;
+    padding-left: 10px;
+    background-color: #F3AA96;
+    float: top;
+}
+
+.icon{
+    width:40px;
+    height:40px;
+    border-radius: 40px;
+    margin-top: 5px;
+    background-color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color:#F3AA96;
+    float:left;
+}
+.title{
+    width:200px;
+    height:25px;
+    margin:12.5px;
+    font-size: 25px;
+    color:white;
+    text-align: center;
+    font-weight: 900;
+    float:left;
+}
+
+#main{
+    width: 480px;
+    height: 80vh;
+    margin:auto;
+}
+
+#cksr{
+    margin:10px;
+    font-size: 20px;
+    font-weight:600;
+}
+#cksr label{
+    height:20px;
+    width:100px;
+}
+
+#page{
+    font-size: 20px;
+}
+
+#ckppt{
+    width:480px;
+    height:270px;
+    margin-top:10px;
+    background-color: ivory;
+}
+
+#main button{
+    width:45px;
+    height:45px;
+    /*
+    margin: 7.5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    */
+    margin: 7px;
+    border-radius: 40px;
+    border:0px;
+    background-color:#F6B980;
+}
+
+#main button:hover{
+    color:white;
+    background-color:#FDE3A6;  
+}
+#cfast{
+    background-image:url(../images/fastbtn.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#cnoise{
+    background-image:url(../images/noisebtn.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#cconfuse{
+    background-image:url(../images/confusebtn.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/*確認按鈕*/
+.check{
+    width: 60px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 1em;
+    background-color: #F6B980;
+    font-family: 'Microsoft JhengHei',Arial;
+    font-weight: 900;
+    float: right;
+}

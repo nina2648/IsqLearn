@@ -1,0 +1,148 @@
+@import'./reset.css';
+
+.banner{
+    height: 50px;
+    /*background-color: #628EA6;*/
+    background-color: #ADD3EC;
+}
+.userbtn {
+    height: 50px;
+    float: right;
+}
+
+.usermsg {
+    width: 110px;
+    height: 40px;
+    margin-top: 5px;
+    padding-left: 5px;
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    float: left;
+}
+
+.userlogo {
+    width: 35px;
+    height: 35px;
+    background-image: url(../images/user.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2.5px;
+    float: left;
+}
+
+.username {
+    font-size: 1.2em;
+    padding-right: 7px;
+    padding-left: 5px;
+    padding-top: 10px;
+    float: left;
+}
+
+.btns {
+    height: 40px;
+    width: 500px;
+}
+
+
+
+/*功能按鈕樣式*/
+.btns{
+    height:40px;
+    width:500px;
+}
+#btnpage ul li{
+    display: inline;
+    font-size: 1.2em;
+    padding-left: 5px;
+    padding-right: 7px;
+    border-right:solid gray 2px;
+}
+#btnpage ul{
+    float: right;
+    padding-right: 45px;
+    padding-top: 15px;   
+}
+/*設定超連結顏色*/
+#btnpage a{
+    /*沒有底線*/
+    text-decoration:none;
+    color:black;
+}
+/*按鈕hover設定*/
+#btnpage a:hover{
+    text-decoration:none;
+    color:white;
+}
+
+
+
+/*課堂列表與星期按鈕*/
+.classmain {
+    width: 55vw;
+    height: 37.22vw;
+    margin: auto;
+    margin-top: calc((100vh - 50px - 37.22vw) / 2);
+}
+
+    /*課堂列表*/
+    .classmain .classlist {
+        height: 37.22vw;
+        width: 45vw;
+        float: left;
+    }
+
+.classlist .title {
+    font-size: 2.5vw;
+    font-weight: bold;
+    height: 3.91vw;
+    /*background-color: grey;*/
+}
+
+/*課堂放置區域*/
+.list {
+    height: 34vw;
+    border: solid gray 5px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+/*每格課堂*/
+.list1 {
+    height: 4.7vw;
+    /*border:solid gray 5px;*/
+    /*background-color: lavender;*/
+    background-color: #DDDBD5;
+    border-top: 0px;
+    margin-bottom: 2px;
+}
+
+/*星期按鈕*/
+.weekbtn {
+    height: 37.22vw;
+    width: 7.83vw;
+    float: right;
+    margin-left: 5px;
+}
+/*按鈕樣式*/
+.btnDay {
+    width: 6.26vw;
+    height: 6.26vw;
+    margin: 0.58vw;
+    margin-left: 0.78vw;
+    border-radius: 6.26vw;
+    border: 0px;
+    font-size: 1.48vw;
+    background-color: #F6B980;
+}
+
+    /*按鈕動作*/
+    .btnDay:hover {
+        color: white;
+        background-color: #FDE3A6;
+    }
+
+    .btnDay:active {
+        /*background-color: #AEA2BD;*/
+        background-color: #FDE3A6;
+    }
